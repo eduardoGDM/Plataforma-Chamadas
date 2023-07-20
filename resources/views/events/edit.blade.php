@@ -11,7 +11,7 @@
     @method('PUT')
     <div class="form-group">
       <label for="title">Assunto:</label>
-      <input type="text" class="form-control" id="title" name="title" placeholder="Nome do evento" value="{{ $event->title }}">
+      <input type="text" class="form-control" id="title" name="title" value="{{ $event->title }}">
     </div>
     <div class="form-group">
       <label for="date">Data da Solução:</label>
@@ -31,7 +31,7 @@
     </div>
     <div class="form-group">
       <label for="title">Descrição:</label>
-      <textarea name="description" id="description" class="form-control" placeholder="O que vai acontecer no evento?">{{ $event->description }}</textarea>
+      <textarea name="description" id="description" class="form-control">{{ $event->description }}</textarea>
     </div>
     <div class="form-group">
       <label for="title">Situação:</label>
