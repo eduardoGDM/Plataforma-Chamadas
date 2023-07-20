@@ -77,7 +77,7 @@ class EventController extends Controller
     public function destroy($id) {    //controller para deletar um dado no banco
         Event::findOrFail($id)->delete();
 
-        return redirect('/dashboard')->with('msg','Evento excluído com sucesso!');
+        return redirect('/dashboard')->with('msg','Chamada excluída com sucesso!');
     }
 
     public function edit($id) {
@@ -91,7 +91,7 @@ class EventController extends Controller
 
         Event::findOrFail($request->id)->update($data);
 
-        return redirect('/dashboard')->with('msg', 'Evento editado com sucesso!');
+        return redirect('/dashboard')->with('msg', 'Chamada editada com sucesso!');
 
     }
 
